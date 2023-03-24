@@ -54,7 +54,7 @@ function Verify() {
         </p>
         <a
           className="App-link"
-          href="http://www.badregplc.com"
+          href="https://solomon141.github.io/badregclient/"
           target="_blank"
           rel="noopener noreferrer"
         >
