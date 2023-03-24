@@ -49,8 +49,7 @@ function Login() {
         newestOnTop={false}
       />
 
-      <h1>Login page</h1>
-
+      
       <div className="row">
         <div className="col-sm-12 col-md-12 col-lg-4"> </div>
         <div className="col-sm-12 col-md-12 col-lg-4">
