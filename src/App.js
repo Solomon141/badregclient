@@ -21,7 +21,7 @@ function App() {
         <>
           <DDNav />
           <Routes>
-            <Route path="/Dashboard" element={<Dashboard />} />
+            <Route path="/badregclient/Dashboard" element={<Dashboard />} />
             <Route path="*" element={<Dashboard />} />
           </Routes>
         </>
@@ -29,13 +29,13 @@ function App() {
         <>
           <Routes>
             <Route path="*" element={<Login />} />
-            <Route path="/Login" element={<Login />} />
-            <Route path="/ChangePassword" element={<ChangePassword />} />
-            <Route path="/Forgotpass" element={<Forgotpass />} />
-            <Route path="/Register" element={<Register />} />
-            <Route path="/Resetpass" element={<Resetpass />} />
-            <Route path="/EmailSentPage" element={<EmailSentPage />} />
-            <Route path="/Verify/:vkey" element={<Verify />} />
+            <Route path="/badregclient/Login" element={<Login />} />
+            <Route path="/badregclient/ChangePassword" element={<ChangePassword />} />
+            <Route path="/badregclient/Forgotpass" element={<Forgotpass />} />
+            <Route path="/badregclient/Register" element={<Register />} />
+            <Route path="/badregclient/Resetpass" element={<Resetpass />} />
+            <Route path="/badregclient/EmailSentPage" element={<EmailSentPage />} />
+            <Route path="/badregclient/Verify/:vkey" element={<Verify />} />
           </Routes>
         </>
       )}
