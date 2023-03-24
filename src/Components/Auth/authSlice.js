@@ -1,14 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { BASE_URL } from "../../app/ConfigConstants";
+import { BASE_URL } from "../../Redux/ConfigConstants";
 import axios from "axios";
 
 const initialState = {
   isAuthenticated: false,
   error: false,
   message: null,
-  data: {
-    name: "Solomon Gebremichael",
-  },
+  data: {  },
 };
 
 const authSlice = createSlice({
