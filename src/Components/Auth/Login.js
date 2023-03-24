@@ -7,7 +7,7 @@ import { BASE_URL } from "../../Redux/ConfigConstants";
 import { useDispatch } from "react-redux";
 import { userlogin, userregister } from "./authSlice";
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
 
 function Login() {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ function Login() {
   const [pwd, setPwd] = useState("");
   const [email, setEmail] = useState("");
   const loginButton = () => {
-    console.log('login start')
+    console.log("login start");
     axios
       .post(`${BASE_URL}compuser/login`, {
         email: email,
@@ -31,8 +31,8 @@ function Login() {
           toastLogin_failed(res.data.message);
         } else {
           toastLogin_success(res.data.message);
-          dispatch(userlogin({responseData:res.data}))
-          setTimeout(() => navigate("/Dashboard"), 3000)
+          dispatch(userlogin({ responseData: res.data }));
+          setTimeout(() => navigate("/Dashboard"), 3000);
         }
       })
       .catch((err) => {
@@ -49,10 +49,9 @@ function Login() {
         newestOnTop={false}
       />
 
-
+      <h1>Login page</h1>
 
       <div className="row">
-     
         <div className="col-sm-12 col-md-12 col-lg-4"> </div>
         <div className="col-sm-12 col-md-12 col-lg-4">
           <div
@@ -76,10 +75,8 @@ function Login() {
             />
             <div style={{ paddingTop: 40 }}></div>
             <Button onClick={loginButton}> Login </Button>
-            <Link style={{ paddingTop: 40 }}  to="/Register">
-              <div className="align-items-center"> 
-              Register
-              </div>
+            <Link style={{ paddingTop: 40 }} to="/Register">
+              <div className="align-items-center">Register</div>
             </Link>
           </div>
           {/* </div> */}
